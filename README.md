@@ -21,27 +21,27 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 tokenizer = Tokenizer()
 tokenizer.fit_on_texts([faqs])
 ```
-##Creating the Dataset:
+## Creating the Dataset:
 
 The heart of our word prediction model is the dataset. We split the text into sentences and tokenize each sentence into a sequence of numbers. We then create input sequences and corresponding output sequences. For each input sequence, the output sequence consists of the next word in the sentence. This dataset allows our model to learn and predict words based on the context of the sentence.
 
-##Data Padding:
+## Data Padding:
 
 Since sentences in the FAQs have varying lengths, we need to ensure that all inputs to our model are of the same length. To achieve this, we pad the input sequences with zeros. The maximum length of any sequence in our dataset determines the length of padding.
 
-##Building the Model:
+## Building the Model:
 
 Our word prediction model consists of three key components: an embedding layer, an LSTM layer, and a dense layer. The embedding layer converts the tokenized input into dense vectors, making it suitable for deep learning. The LSTM layer, a type of recurrent neural network, helps the model understand the sequence of words and their context. Finally, the dense layer with a softmax activation function predicts the next word in the sequence.
 
-##Training and Fine-Tuning:
+## Training and Fine-Tuning:
 
 To train our model, we use categorical cross-entropy as the loss function and the Adam optimizer. We iterate through the dataset over several epochs, fine-tuning the model's weights to optimize word prediction accuracy.
 
-##Results and Predictions:
+## Results and Predictions:
 
 After training the model, it's time to put it to the test. We provide an initial word (in this case, "nlp"), and the model predicts the next word based on the context of the sentence. We iterate this process to generate a sentence, and the model's predictions improve with each step.
 
-##Conclusion:
+## Conclusion:
 
 In this blog post, we've explored the process of creating a word prediction model using TensorFlow and Keras. The model takes a seed word or phrase and predicts the next word based on the context of the input. This technology has numerous applications, from auto-suggest features to chatbots and more.
 
