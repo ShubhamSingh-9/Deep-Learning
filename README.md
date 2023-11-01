@@ -71,7 +71,14 @@ As the field of natural language processing continues to evolve, word prediction
 Feel free to experiment with the code and datasets to build your own word prediction models for different applications. The possibilities are endless, and the world of natural language processing is full of exciting challenges and opportunities.
 
 ## How to improve the Performance
-More Data: 
+The current model is based on a simple LSTM network with 283 features extracted from the text. However, there are some limitations and challenges that can be addressed with more data, hyperparameter tuning, and advanced architectures.
+
+More Data: The current model uses a relatively small number of features, which may not capture the complexity and diversity of jokes. A larger and more varied dataset could help the model learn more patterns and nuances of humor. For example, one could use the Kaggle dataset on Jokes, which contains over 200,000 jokes from different sources and genres. However, this would also require more computational resources and time to train the model.
+
+Hyperparameter Tuning: The current model uses a fixed set of hyperparameters, such as the number of LSTM units (150), the learning rate (0.001), the optimizer (Adam), and the number of epochs (10). These hyperparameters may not be optimal for the task and could be adjusted to improve the performance. For example, one could increase the number of LSTM units to capture more information from the input sequence, or change the optimizer or learning rate to speed up or stabilize the training process. One could also experiment with different numbers of epochs to find the best trade-off between overfitting and underfitting.
+
+Advanced Architectures: The current model uses a single-layer LSTM network, which is a simple and widely used architecture for sequence modeling. However, there are more advanced architectures that could potentially enhance the model's ability to generate jokes. For example, one could use a stacked LSTM network, which consists of multiple layers of LSTM units that feed into each other. This could allow the model to learn more abstract and high-level features from the input sequence. Alternatively, one could use a bidirectional LSTM network, which processes the input sequence from both directions and combines the outputs. This could help the model capture more context and dependencies from both ends of the sequence. Another option is to use a transformer network, which is a state-of-the-art architecture that relies on attention mechanisms to encode and decode sequences. This could enable the model to learn more long-range and global relationships among the words in the sequence.
+
 
 
 
