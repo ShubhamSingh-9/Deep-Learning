@@ -1,7 +1,6 @@
-# Deep-Learning
-
 # Building a Word Prediction Model for FAQs Using TensorFlow and Keras.
 
+![image](https://github.com/ShubhamSingh-9/Deep-Learning/assets/111279439/7f436696-aafc-4deb-8d26-d0f99d0fb8c5)
 
 ## Introduction:
 
