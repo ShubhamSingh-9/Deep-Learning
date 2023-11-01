@@ -5,7 +5,7 @@
 
 ## Introduction:
 
-In the world of natural language processing, building a word prediction model can be a fascinating endeavor. Such models are not only used in various applications like auto-suggest features in search engines but also in chatbots and customer support systems. In this blog post, we'll explore the creation of a word prediction model using Python, TensorFlow, and Keras.
+Word prediction models are based on the idea of predicting the next word in a sequence of words given some context. For example, given the sentence "She loves to play", a word prediction model might suggest "soccer", "piano", or "games" as possible next words. To build such a model, we need to train it on a large corpus of text data and learn the statistical patterns of word usage and co-occurrence. In this blog post, we'll use the TensorFlow framework and the Keras library to implement a simple word prediction model using a recurrent neural network (RNN). We'll also evaluate the performance of our model on a test set and see how it compares to other models.
 
 ## Understanding the Code:
 
